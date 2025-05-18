@@ -127,7 +127,7 @@ class PIPACrawler:
                             # Replace size indicators like _m, _n, etc. with _b (large) or _o (original)
                             for size in ['_m', '_n', '_s', '_t', '_q', '_sq']:
                                 if size in src:
-                                    url = src.replace(size, '_b')
+                                    url = src.replace(size, '_o')
                                     return self._ensure_url_scheme(url)
                             return self._ensure_url_scheme(src)
                     
